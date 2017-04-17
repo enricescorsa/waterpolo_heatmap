@@ -13,7 +13,7 @@ classificacio_waterpolo %>%
   html_table()
 
 #me la puc descarregar com a csv i després llegir-la
-#llegixo el csv de resultats partits de waterpolo des del directori on m'he l'he descarregat
+#llegeixo el csv de resultats partits de waterpolo des del directori on m'he l'he descarregat
 waterpolo_heatmap <- read.csv("classificacio_waterpolo.csv", row.names = 1)
 library(d3heatmap) #d3heatmap és un paquet per generar heatmaps interactius en D3.js javascript dins R
 d3heatmap(waterpolo_heatmap, scale = "column")
